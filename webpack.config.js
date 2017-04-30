@@ -71,10 +71,10 @@ const config = {
             {test: /\.ts$/, loaders: ['awesome-typescript-loader']},
             {test: /\.css$/, loaders: ['style-loader', 'to-string-loader', 'css-loader']},
             {test: /\.html$/, loader: 'raw-loader'},
-            {test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'}
+            {test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader?name=fonts/[name].[ext]'},
+            { test: /\.(jpg|jpeg|png)$/, loader: "file-loader?name=[name].[ext]&publicPath=assets/&outputPath=assets/" }
         ]
     }
-
 };
 
 module.exports = webpackMerge(defaultConfig, config);
