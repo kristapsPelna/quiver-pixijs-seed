@@ -1,0 +1,50 @@
+{
+    "rules": {
+        "curly": true,
+        "one-line": [true,
+            "check-open-brace",
+            "check-catch",
+            "check-else",
+            "check-finally",
+            "check-whitespace"
+        ],
+        "whitespace": [true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator"
+        ],
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "triple-equals": [true,
+            "allow-null-check",
+            "allow-undefined-check"
+        ],
+        "radix": true,
+        "no-eval": true,
+        "no-conditional-assignment": true,
+        "no-construct": true,
+        "no-debugger": true,
+        "no-invalid-this": true,
+        "no-string-throw": true,
+        "no-unused-new": false,
+        "no-var-keyword": true,
+        "no-use-before-declare": true,
+        "use-isnan": true,
+        "cyclomatic-complexity": true,
+        "align": [true, "parameters", "statements"],
+        "one-variable-per-declaration": [true, "ignore-for-loop"],
+        "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+        "max-line-length": [true, 120],
+        "class-name": true,
+        "max-classes-per-file": [true, 1],
+        "prefer-const": true,
+        "no-switch-case-fall-through": true,
+        "no-unused-expression": true,
+        "no-duplicate-variable": true,
+        "no-consecutive-blank-lines": true,
+        "semicolon": [true, "always", "ignore-interfaces"]
+    }
+}
