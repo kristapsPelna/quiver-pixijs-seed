@@ -12,10 +12,6 @@ export class MainView extends Container {
 
         require("./../../../../assets/logo.png");
 
-        this.addChild(
-            new Sprite(
-                Texture.fromImage("assets/logo.png")
-            )
-        );
+        this.addChild(Sprite.from("assets/logo.png"));
     }
 }

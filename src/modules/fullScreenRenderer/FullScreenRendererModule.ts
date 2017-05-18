@@ -33,14 +33,14 @@ export class FullScreenRendererModule {
         stage.name = "stage";
         app.stage.addChild(stage);
 
-        stage.width = viewportSize.width;
+        /*stage.width = viewportSize.width;
         stage.height = viewportSize.height;
 
         //Resize stage to be full screen
         viewportSize.addEventListener(ViewportSize.SIZE_CHANGED, () => {
             stage.width = viewportSize.width;
             stage.height = viewportSize.height;
-        });
+        });*/
 
         injector.map(Renderer as any).toValue(app.renderer);
         injector.map(Stage).toValue(stage);
